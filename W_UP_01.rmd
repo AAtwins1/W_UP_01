@@ -40,6 +40,19 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 ### Graphical Descriptive Results
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+## Now with ggplot - first select the basic data
+
+```{r}
+basicCN <- ggplot(mydata,aes(x=position,y=pushups))
+```
+## Now add in boxplot
+
+```{r}
+basicCN + geom_boxplot()
+```
+  
+
+Skill players can do more pushups than line players because the middle 50 percent of the skill players can do between 30 to 59 pushups whereas the middle 50 percent of the line players can do between 8 to 27 pushups.
 
 ### Numerical Descriptive Results
 
